@@ -3,11 +3,7 @@
 *.dll
 *.so
 *.dylib
-
 *.test
-
 *.out
+.env
 
-go.work
-
-/env
