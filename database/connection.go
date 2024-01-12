@@ -10,7 +10,7 @@ var (
 	logger *config.Logger
 )
 
-func InitPostgreSQL() *gorm.DB {
+func InitializerPostgreSQL() *gorm.DB {
 	host := config.GetEnvironments("DB_URL")
 	db, err := gorm.Open(postgres.Open(host), &gorm.Config{})
 	if err != nil {

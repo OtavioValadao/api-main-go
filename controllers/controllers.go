@@ -1,9 +1,9 @@
-package routers
+package controllers
 
 import (
 	"github.com/gin-gonic/gin"
 )
 
-func ConfigRouters() *gin.Engine {
+func InitControllers() *gin.Engine {
 	return gin.Default()
 }
