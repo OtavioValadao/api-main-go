@@ -9,7 +9,5 @@ func main() {
 	database.InitializerPostgreSQL().AutoMigrate(
 		&models.AnimalGuardian{},
 		&models.Animal{},
-		//&models.User{},
-		//&models.CreditCard{},
 	)
 }
