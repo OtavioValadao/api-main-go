@@ -1,7 +1,11 @@
 package main
 
-import "github.com/OtavioValadao/api-main-go.git/database"
+import (
+	"github.com/OtavioValadao/api-main-go.git/database"
+	"github.com/OtavioValadao/api-main-go.git/routers"
+)
 
 func main() {
-	database.InitPostgreSQL()
+	database.InitializerPostgreSQL()
+	routers.Initialize()
 }

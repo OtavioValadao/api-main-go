@@ -6,5 +6,8 @@ import (
 )
 
 func main() {
-	database.InitPostgreSQL().AutoMigrate(&models.Post{})
+	database.InitializerPostgreSQL().AutoMigrate(
+		&models.AnimalGuardian{},
+		&models.Animal{},
+	)
 }
